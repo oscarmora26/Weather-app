@@ -1,0 +1,73 @@
+.sidebar {
+    background-color: #1E213A;
+    height: 100vh;
+    color: white;
+   
+    background-image: url(../../assets/Cloud-background.png);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-position: -70px 70px;
+}
+
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding: 25px;
+}
+    .btn-sidebar {
+        height: 32px;
+        padding-right: 15px;
+        padding-left: 15px;
+        color: white;
+    }
+    .btn{
+        background-color:#6E707A;
+    }
+    .btn-location{
+        height: 32px;
+        color: white;
+    }
+.sidebar-body{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+    .sidebar-body-img{
+        width: 47%;
+        margin-top: 50px;
+    }
+
+    .sidebar-body h2{
+        font-size: 68px;
+        margin-bottom: 0px;
+    }
+
+    .sidebar-body h2 span{
+        font-size: 32px;
+        font-weight: 400;
+        color: #6E707A;
+    }
+
+    .sidebar-body h3{
+        font-size: 32px;
+        font-weight: 500;
+        color: #A09FB1;
+    }
+
+.sidebar-footer{
+    height: 20%;
+    text-align: center;
+    color: #88869D;
+}
+
+    .sidebar-footer p span{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+.btn-red{
+    background-color: red;
+}
