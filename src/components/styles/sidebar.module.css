@@ -76,6 +76,7 @@
 
 .sidebar-search{
     padding: 30px;
+    overflow-y: scroll;
 }
     .sidebar-search-x{
         margin-bottom: 10px;
@@ -129,3 +130,20 @@
         color: white;
         height: 32px;
     }
+.location{
+    display: flex;
+    flex-direction: column;
+}
+    .location .item{       
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .location .item:hover{
+        border: 1px solid white;
+    }
+        .location .item p {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
