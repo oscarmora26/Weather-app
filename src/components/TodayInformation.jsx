@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './styles/todayInformation.module.css'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay, faPlayCircle } from '@fortawesome/free-solid-svg-icons'
+import { faPlay } from '@fortawesome/free-solid-svg-icons'
 
 function TodayInformation(props) {
     return (

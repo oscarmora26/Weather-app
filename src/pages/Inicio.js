@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Sidebar from '../components/Sidebar.jsx'
 import styles from './styles/inicio.module.css'
 import WeatherInformacion from '../components/WeatherCard.jsx'

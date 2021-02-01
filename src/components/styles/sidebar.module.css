@@ -2,11 +2,13 @@
     background-color: #1E213A;
     height: 100vh;
     color: white;
-   
-    background-image: url(../../assets/Cloud-background.png);
     background-repeat: no-repeat;
     background-size: 150%;
     background-position: -70px 70px;
+}
+
+.sidebar-img{
+    background-image: url(../../assets/Cloud-background.png);
 }
 
 .sidebar-header {
@@ -71,3 +73,59 @@
 .btn-red{
     background-color: red;
 }
+
+.sidebar-search{
+    padding: 30px;
+}
+    .sidebar-search-x{
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+        .sidebar-search-x button{
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 32px;
+            cursor: pointer;            
+        }
+    .sidebar-search div{
+        display: flex;
+        justify-content: space-between;
+    }
+        .sidebar-search .input-content{
+            background-color: transparent;
+            display: grid;
+            grid-template-columns: 15% 85%;
+            height: 32px;
+            border: 1px solid white;
+            color: #616475;
+        }
+        .sidebar-search .input-content:hover{
+            color: white;
+        }
+            .sidebar-search .input-content div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar-search .input-content input{
+                background-color: transparent;
+                border: none;
+                color: white;
+            }            
+            .sidebar-search .input-content input::placeholder{
+                color: #616475;
+            }
+            .sidebar-search .input-content input:hover::placeholder{
+                color: white;
+            }
+            .sidebar-search .input-content input:focus{                
+                outline: none;
+            }
+    .sidebar-search-btn{
+        background-color: #3C47E9;
+        border: none;
+        color: white;
+        height: 32px;
+    }
