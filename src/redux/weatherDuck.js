@@ -27,7 +27,7 @@ export default function reducer(state = dafaultData, action) {
 }
 export const getWeatherToday = () => async (dispatch, getState) => {
     try {
-        const res = await axios.get('https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/44418/')
+        const res = await axios.get('https://meta-weather.now.sh/api/location/44418/')
         dispatch({
             type: GET_WEATHER_TODAY,
             payload: res.data
@@ -39,7 +39,7 @@ export const getWeatherToday = () => async (dispatch, getState) => {
 
 export const searchWeather = (location) => async (dispatch, getState) => {
     try {
-        const res = await axios.get(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/search/?query=${location}`)
+        const res = await axios.get(`https://meta-weather.now.sh/api/location/search/?query=${location}`)
         dispatch({
             type: SEARCH_WEATHER,
             payload: res.data
@@ -51,7 +51,7 @@ export const searchWeather = (location) => async (dispatch, getState) => {
 
 export const getOneWheater = (woeid) => async (dispatch, getState) => {
     try {
-        const res = await axios.get(`https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/${woeid}/`)
+        const res = await axios.get(`https://meta-weather.now.sh/api/location/${woeid}/`)
         dispatch({
             type: GET_ONE_WEATHER,
             payload: res.data
